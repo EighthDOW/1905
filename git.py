@@ -79,7 +79,7 @@ git基本命令
    git commit -m "some message"
 
    * 同步时需要附加一些同步信息 在-m后添加
-   * 所有对工作区的修改如果想同步到本地仓库，都需要    add--->commit
+   * 所有对工作区的修改如果想同步到本地仓库，都需要add--->commit
 
 查看commit日志
     git log
@@ -102,20 +102,18 @@ git基本命令
      删除文件
      git  rm   file
 
-     * 用法和mv rm命令相同。操作后直接commit即可工  作区和本地仓库同步
+     * 用法和mv rm命令相同。操作后直接commit即可工作区和本地仓库同步
 
   * 忽略文件
-    在git仓库中有时候不需要把所有文件都进行协同操作。创建.gitignore文件夹，把忽略的文件名添加进去，这样在同步的时候就不会自动上传。
+    在git仓库中有时候不需要把所有文件都进行协同操作,创建 .gitignore 文件夹,把忽略的文件名添加进去，这样在同步的时候就不会自动上传。
 
 版本控制命令
 
 回到之前版本
    git reset --hard HEAD^
-
    * HEAD后的^数量决定了回到上几个版本
 
    git reset --hard  commit_id
-
    * 使用commit前7位即可，回到指定的版本
 
 去往更新的版本
@@ -123,7 +121,7 @@ git基本命令
       git  reflog
    2. 使用git reset 去往指定版本
 
-   * git reflog 会有所有的操作记录，最新的操作时钟在   最上边
+   * git reflog 会有所有的操作记录,最新的操作时钟在最上边
 
 
 标签管理
