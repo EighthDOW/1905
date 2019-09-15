@@ -250,22 +250,22 @@ git remote add origin tarena@127.0.0.1:/home/tarena/AID1807/gitrepo/fly.git
     git  fetch  （如果有新的分支拉取到本地不会和本地              分支合并）
 
 github
+  github是一个开源项目社区网站。拥有全球最多的开源项目。开发者可以注册这个网站建立自己的github仓库。
+  然后就可以在本地通过git像操作远程仓库一样操作github仓库。
 
-github是一个开源项目社区网站。拥有全球最多的开源项目。开发者可以注册这个网站建立自己的github仓库。然后就可以在本地通过git像操作远程仓库一样操作github仓库。
+  git是github唯一指定的代码管理工具
 
-git是github唯一指定的代码管理工具
+  网址：https://github.com/
 
-网址：https://github.com/
-
-添加ssh秘钥
-   1. 在本地主机生成ssh密钥对
+  添加ssh秘钥
+    1. 在本地主机生成ssh密钥对
       ssh-keygen
 
       * 默认密钥对存放在 ~/.ssh/ 下
       * 生成过程会提示设置密码，如果直接回车则表示不设置密码
 
-   2. 进入 ~/.ssh 目录 复制 id_rsa.pub 公钥内容
-   3. 登录github账号
+    2. 进入 ~/.ssh 目录 复制 id_rsa.pub 公钥内容
+    3. 登录github账号
        右上角头像下拉菜单--》settings --》
        左侧 SSH and GPG keys --》new ssh key --》填写title，将复制内容加入key文本框 点击add...
 
