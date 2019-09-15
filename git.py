@@ -149,6 +149,18 @@ git基本命令
 去往某个标签版本
     git reset --hard  v0.9
 
+保存工作区
+  1.工作区保存
+    git stash save [message]
+    说明: 将工作区未提交的修改封存,让工作区回到修改前的状态
+  2.查看工作区列表
+    git stash list
+    说明: 最新保存的工作区在最上面
+  3.应用某个工作区
+    git stash apply [stash@{n}]
+  4.删除工作区
+    git stash drop [stash@{n}] 删除某一个工作区
+    git stash clear 删除所有保存的工作区
 
 分支操作
 
