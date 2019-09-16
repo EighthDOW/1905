@@ -251,8 +251,7 @@ git基本命令
 代码退出和拉取
     将本地代码推送到连接的远程仓库
     git  push
-
-    git push  --force  origin (当本地版本比远程版本旧                            是用本地旧版本覆盖远程                            新版本)
+    git push  --force  origin (当本地版本比远程版本旧是用本地旧版本覆盖远程                            新版本)
 
     从远程仓库更新代码
     git  pull
