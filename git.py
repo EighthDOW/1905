@@ -223,8 +223,17 @@ git基本命令
 
 将本地分支推送到远程
   git push -u origin master
+  git push
+  * 在第一次向远程仓库推送时需要加 -u选项,以后就不需要了
 
-  * 在第一次向远程仓库推送时需要加 -u选项，以后就不需要了
+删除远程分支
+  git push origin --delete 分支名
+
+将本地标签推送到远程
+  git push origin --tags  # 将本地所有标签推送
+
+删除远程仓库标签
+  git push origin --delete tag v1.0
 
 从远程仓库获取项目
   git clone  tarena@127.0.0.1:/home/tarena/AID1807/gitrepo/fly.git
@@ -236,6 +245,8 @@ git基本命令
   拉取远程分支到本地，不合并
   git pull origin  dev_Tom     :   dev_Tom
                   远程分支名      本地分支名
+
+  git branch -a  查看所有分支(包含远程)
 
 代码退出和拉取
     将本地代码推送到连接的远程仓库
@@ -271,7 +282,7 @@ github
   右上角 + 下拉菜单 --》 new repository --》 填写参考名和基本描述 ，根据情况选择是否添加readme等内容，选择共有还是私有 --》 点击创建
 
 操作github仓库
-  1.git remote 连接远程github仓库 如果需要输入密码输   入github密码即可
+  1.git remote 连接远程github仓库 如果需要输入密码输入github密码即可
   2. 使用git push等操作远程仓库的方法操作即可
 
 PIP的使用
