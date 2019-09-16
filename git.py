@@ -255,7 +255,9 @@ git基本命令
 
     从远程仓库更新代码
     git  pull
-    git  fetch  （如果有新的分支拉取到本地不会和本地分支合并）
+    git  fetch  origin master:temp（如果有新的分支拉取到本地不会和本地分支合并）
+      git merge temp
+    *fetch: 拉取到本地作为新分支,再合并到master
 
 github
   github是一个开源项目社区网站。拥有全球最多的开源项目。开发者可以注册这个网站建立自己的github仓库。
