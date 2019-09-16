@@ -212,21 +212,19 @@ git基本命令
        chown -R tarena:tarena fly.git
 
 添加远程仓库
+  git remote add origin tarena@127.0.0.1:/home/tarena/AID1807/gitrepo/fly.git
+  * 默认使用SSH作为传输手段
+  * 必须在本地的某个git仓库下执行才能使本地仓库和远程仓库关联
 
-git remote add origin tarena@127.0.0.1:/home/tarena/AID1807/gitrepo/fly.git
-
-* 默认使用SSH作为传输手段
-* 必须在本地的某个git仓库下执行才能使本地仓库和远程   仓库关联
+  git remote 查看当前远程仓库
 
 删除远程主机
-
   git remote  rm  [origin]
 
 将本地分支推送到远程
-
   git push -u origin master
 
-  * 在第一次向远程仓库推送时需要加 -u选项，以后就不   需要了
+  * 在第一次向远程仓库推送时需要加 -u选项，以后就不需要了
 
 从远程仓库获取项目
   git clone  tarena@127.0.0.1:/home/tarena/AID1807/gitrepo/fly.git
